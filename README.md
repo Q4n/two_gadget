@@ -10,11 +10,12 @@
 
 基于python 2.7 
 	--> pwntools
+
 idapython
 
 ### 使用方法
 
-0. 先编译prog目录下的pow.c文件, 编译命令在文件头
+0. 先编译prog目录下的pow.c文件, 编译命令在文件头, 需要自行修改代码获取so的基地址
 1. 将被测试的so文件和运行所需要的ld文件放入`tested_libc`文件夹
 2. 打开IDA 加载 `dump_func.py`
 3. 运行 `python testreg.py` 记得先修改脚本中的参数
